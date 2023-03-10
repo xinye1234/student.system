@@ -1,0 +1,217 @@
+.container {
+    /* width: 1200px; */
+    /* border: 1px solid red; */
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-lg {
+        /* width: 25%; */
+        /* height: 300px; */
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+        
+
+        .item { 
+            padding: 4px;
+            margin: 15px 15px;
+            /* background-color: aqua; */
+            border: 1px solid #ccc;
+            img {
+                width: 100%;
+
+            }
+
+            .text{
+
+
+                a {
+
+                    text-decoration: none;
+
+                    h3 {
+                        font-size: 24px;
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        font-weight: 500;
+                        color: #5b94c5;
+                    }
+
+                    span {
+                        
+                        display: block;
+                        text-align: center;
+                        font-size: 16px;
+                        color: #999;
+                    }
+                }
+                &:hover{
+                    h3{
+                    color: aqua;
+                    }
+                }
+                p{
+                    text-align: center;
+                    line-height: 20px;
+                    margin: 15px 10px 0px;
+                    font-size: 12px;
+                    color: #666;
+                    height: 100px;
+                    overflow: hidden;
+                }
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1200px;
+        .col-lg{
+            width: 25%;
+        }
+    }
+}
+//992-1200
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container{
+        width: 900px;
+        .col-md{
+            width: 33%;
+        }
+    }
+}
+//768-992
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .container{
+        width: 600px;
+        .col-la{
+            width: 50%;
+        }
+    }
+    
+}
+//500-768
+@media screen and (min-width:500px) and (max-width: 768px)  {
+    .container{
+        width: 300px;
+        .col-la{
+            width: 100%;
+        }
+    }
+}
+
+
+
+/* 头部区域 */
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-size: 36px;
+    width: 300px;
+    color: #666;
+    margin: 30px auto;
+}
+
+@media screen  and (min-width:750px){
+    .content{
+        background-color: #666;
+        height:35px;
+        ul{
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            max-width: 1200px;
+            list-style: none;
+            display: flex;
+            li{
+                line-height: 35px;
+                /* background-color: aqua; */
+                flex-grow: 1;
+                
+                text-align: center;
+                a{
+                    display: block;
+                    width: 100%;
+                    color: white;
+                    text-decoration: none;
+                    border-right: 3px solid #444;
+                }
+                &:hover{
+                    background-color: red;
+                }
+                &:last-child{
+                    a{
+                        border-right: none;
+                    }
+                }
+            }
+    
+        }
+    } 
+    .box{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:750px) {
+    .box{
+        height: 12vw;
+        background-color: #666;
+        padding: 2vw;
+        box-sizing: border-box;
+        .item{
+            display: flex;
+            .btn{
+                width: 10vw;
+                height: 8vw;
+            }
+            .image{
+                flex-grow: 1;
+                /* background-color: aqua; */
+                text-align: center;
+                img{
+                    height: 8vw;
+                }
+            }
+
+        }
+
+    }
+
+
+    .content{
+        
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            li{
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                border-bottom: 1px solid #ccc;
+                background-color: #999;
+                
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: azure;
+                }
+            }
+            &:last-child{
+                border-top: 1px solid #ccc;
+            }
+            
+        }
+        .show{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>注册</h1>
+    <input type="text" id="username">
+    <input type="text" id="passward">
+    <button id="pushBtn">注册</button>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script>
+            $('#username').blur( function(){
+            // console.log('123');
+            const username = $('#username').val();
+            $.ajax({
+                url:'/users/IsAccess',
+                data:{
+                    username
+                },
+                type:'post',
+                success:function(msg){
+                    
+                    if(!msg.status){
+                        // alert(msg.message);
+                        $('#pushBtn').prop('disabled',true);
+                    }else{
+                        $('#pushBtn').prop('disabled',false);
+                    }
+                }
+            })
+        });
+
+        $('#pushBtn').click(function () {
+            const username = $('#username').val();
+            const passward = $('#passward').val();
+            $.ajax({
+                url: './users/register',
+                data: {
+                    username,
+                    passward
+                },
+                type: 'post',
+                success: function (msg) {
+                    if(msg.status){
+                        console.log('注册成功');
+                    }else{
+                        console.log('注册失败');
+                    }
+
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

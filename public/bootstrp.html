@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/04-响应.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 引入jquery插件 -->
+ <script src="javascripts/jquery.min.js"></script>   
+ <!-- 书写jquery代码实现点击效果 -->
+<script>
+    //js代码
+    //当前页面加载完成后执行大括号里面的代码
+    $(function(){
+        //按钮点击事件 click代表点击
+        $("#mybtn").click(function(){
+            //点击需要执行的代码
+            //toggleClass 检测当前标签上是否有class名,有则取消, 没有则添加
+            $("#mybtn").toggleClass("fa-window-close")
+            //控制二级菜单
+            $("#dropmenu").toggleClass("show")
+            ;
+        })
+    })
+</script>
+
+<header>响应式布局实战</header>
+<div class="box">
+    <div class="item">
+        <button class="btn fa fa-bars" id="mybtn"></button>
+        <div class="image">
+            <img src="../../图片/xinhai1.jpg" alt="">
+        </div>
+        
+    </div>
+</div>
+
+<div class="content">
+    <ul id="dropmenu">
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+        <li>
+            <a href="">网站首页</a>
+            
+        </li>
+
+    </ul>
+</div>
+
+
+
+<!-- 下方窗口 -->
+
+    <div class="container">
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-1.jpg" alt="">
+                <div class="text">
+                    <a href="https://www.youzhan.org/" target="_blank">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-2.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-3.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-4.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-5.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-6.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md col-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-7.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md co-la">
+            <div class="item">
+                <img src="images/响应式布局boot/boot-8.jpg" alt="">
+                <div class="text">
+                    <a href="">
+                        <h3>优站精选</h3>
+                        <span>Bootstrap 网站实例</span>
+                    </a>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
